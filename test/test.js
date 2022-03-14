@@ -31,7 +31,7 @@ describe('ProjectTest;', () =>
         };
         
     });
-    describe('factorial:', ()=> 
+    describe('Factorial:', ()=> 
     {
         const gtZero=project.factorial(5);
         const eqZero=project.factorial(0);
@@ -59,6 +59,20 @@ describe('ProjectTest;', () =>
         });
 
 
+    });
+
+    describe('Largest of four of all array', ()=>
+    {
+        const arr=project.largestOfFour([[4, 5, 18, 3], [7, 8, 15, 45], [100, 152, 1, 36], [5, 1005, 12, 27]]);
+
+        it('largest index variable', ()=>
+        {
+            expect(arr)
+            .to.be.an('array')
+            .and.to.be.lengthOf(4)
+            .to.deep.equal([ 18, 45, 152, 1005 ])
+            
+        });
     });
 
 });
