@@ -3,8 +3,12 @@ const confirmEnding=(str, ending)=>
     let begin =ending.length;
     let result=false;
 
-   if(str.slice(-begin)===ending) return result=true;
-   return result
+    str.slice(-begin)===ending
+    &&
+    (result=true)
+
+    return result
+    
 };
 
 const factorial = (num)=>
@@ -21,6 +25,13 @@ const factorial = (num)=>
     result=(num* factorial(num-1));
 
     return result;
-} 
+};
 
+const largestOfFour=(arr)=>
+{
+    return arr.map((subArr)=>{
+        return Math.max.apply(null,subArr);
+    });
+};
+// console.log(largestOfFour([[4, 5, 18, 3], [7, 8, 15, 45], [100, 152, 1, 36], [5, 1005, 12, 27]]));
 module.exports= {confirmEnding, factorial};
