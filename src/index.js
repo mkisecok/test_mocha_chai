@@ -7,6 +7,20 @@ const confirmEnding=(str, ending)=>
    return result
 };
 
+const factorial = (num)=>
+{
+    let result;
+    num<0
+    ?
+    result=-1
+    :
+    num===0
+    ?
+    result=1
+    :
+    result=(num* factorial(num-1));
 
+    return result;
+} 
 
-module.exports= {confirmEnding};
+module.exports= {confirmEnding, factorial};
