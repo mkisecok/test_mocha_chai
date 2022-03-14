@@ -33,5 +33,5 @@ const largestOfFour=(arr)=>
         return Math.max.apply(null,subArr);
     });
 };
-// console.log(largestOfFour([[4, 5, 18, 3], [7, 8, 15, 45], [100, 152, 1, 36], [5, 1005, 12, 27]]));
-module.exports= {confirmEnding, factorial};
+
+module.exports= { confirmEnding, factorial, largestOfFour };
