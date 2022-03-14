@@ -23,4 +23,4 @@
 ## Create a test file for all function in the src file
 
 - use mocha, chai and nyc npm modules for this task and Create tests for all options in src folder
-- 
+
