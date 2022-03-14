@@ -31,6 +31,35 @@ describe('ProjectTest;', () =>
         };
         
     });
+    describe('factorial:', ()=> 
+    {
+        const gtZero=project.factorial(5);
+        const eqZero=project.factorial(0);
+        const ltZero=project.factorial(-5);
+
+        it('greater than zero', ()=>
+        {
+            expect(gtZero)
+            .to.be.a('number')
+            .to.equal(120);
+        });
+
+        it('equal to zero', ()=>
+        {
+            expect(eqZero)
+            .to.be.a('number')
+            .to.equal(1);
+        });
+
+        it('less than zero', ()=>
+        {
+            expect(ltZero)
+            .to.be.a('number')
+            .to.deep.equal(-1);
+        });
+
+
+    });
 
 });
 
